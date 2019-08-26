@@ -1,0 +1,13 @@
+<div>
+
+<p> This is The Life We Living <p>
+  {{#each contestants as |contestant|}}
+  <p>{{contestant.name}}</p>
+  <div class="btn-group btn-group-sm">
+    <form class="user-vote contestant-vote inline-form" data-id="{{contestant._id}}" data-id2="{{session._id}}">
+    <button type="submit" class="btn-success">Vote for {{contestant.name}}</button>
+    </form>
+  </div>
+  {{/each}}
+
+</div>

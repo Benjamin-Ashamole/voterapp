@@ -1,0 +1,64 @@
+<div>
+    <div>
+        <h2>{{session.creator}}</h2>
+        <h4>{{session.title}}</h4>
+    </div>
+    {{!-- <form action="/sessions/{{session.id}}/contestants" method="post" enctype="multipart/form-data"> --}}
+    <!-- <form action="/contestants" method="post" enctype="multipart/form-data"> -->
+    <form action="/contestants" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="profile">Story</label>
+            <input type="text" name="profile">
+        </div>
+        <div>
+            <button type="submit" class="btn submit-button btn-primary">Create Contestant</button>
+        </div>
+    </form>
+</div>
+
+<!-- <h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+
+<div id='mydiv'>
+    <form id='myform'>
+    <div id='cooldiv'></div>
+
+   <div>
+   <input type="button" value="Submit">
+   <input type="button" value="+" onclick="newContestant()">
+   </div>
+
+   </form>
+
+<script>
+    let counter = 0;
+    function newContestant() {
+    counter = counter+1
+
+    let iDiv = document.createElement('div');
+    iDiv.className = 'block';
+    let j = document.getElementById('mydiv').appendChild(iDiv);
+    console.log(j)
+
+    let iLabel = document.createElement('label');
+    iLabel.innerHTML = "Contestant-"+counter;
+
+
+    let iInput = document.createElement('input');
+
+    iInput.type ="text";
+    iInput.name="contestant"+counter;
+
+    iDiv.appendChild(iLabel);
+    iDiv.appendChild(iInput);
+
+    return;
+
+    }
+</script>
+</div> -->
