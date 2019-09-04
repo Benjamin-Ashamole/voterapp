@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <form action="/sessions" method="POST">
         <div>
             <label for="creator">Creator</label>
@@ -8,8 +8,38 @@
             <label for="title">Title</label>
             <input type="text" name="title">
         </div>
+
+        <div>
+            <label for="title">Date</label>
+            <input type="date" name="title">
+        </div>
+
         <div>
             <button type="submit" class="btn submit-button btn-primary">Create Session</button>
         </div>
     </form>
+</div> -->
+<div class="sessionForm">
+<form action="/sessions" method="POST">
+  <div class="form-group">
+    <label for="creator">Creator</label>
+    <input type="text" class="form-control" id="sessionCreator" placeholder="Creator" name="creator">
+  </div>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" class="form-control" id="sessionTitle" placeholder="Title" name="title">
+  </div>
+
+  <div class="form-group">
+    <label for="startDate">Start Date</label>
+    <input type="date" class="form-control" id="sessionStartDate" name="startDate">
+  </div>
+
+  <div class="form-group">
+    <label for="endDate">End Date</label>
+    <input type="date" class="form-control" id="sessionEndDate" placeholder="Title" name="endDate">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Create Session</button>
+</form>
 </div>

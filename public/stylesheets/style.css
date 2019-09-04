@@ -1,10 +1,15 @@
-body {
+html, body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   padding: 0px;
   margin: 0px;
-  background: white;
+  background: rgba(181,75,235,1);
   color: #fff;
   height: 100%;
+  width: 100%;
+}
+
+.aeiou {
+  background-color: rgba(218,204,224,1);
 }
 
 a {
@@ -37,6 +42,24 @@ canvas {
   display: flex;
 	flex-direction: row;
 	justify-content: center;
+  border-radius: 10px;
+}
+
+/*=============================================================================================================================*/
+                                                        /*Session Form*/
+/*=============================================================================================================================*/
+
+.sessionForm {
+  display: flex;
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(218,204,224,1);
+  color: black;
   border-radius: 10px;
 }
 
